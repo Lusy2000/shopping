@@ -1,0 +1,403 @@
+/* 字体图标声明 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+        url('../fonts/icomoon.woff?tomleg') format('woff'),
+        url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+/* 登录背景模块 */
+.login-bg img {
+    float: left;
+    width: 30%;
+    height: 860px;
+}
+
+/* 登录主体模块 */
+.container {
+    position: relative;
+    float: right;
+    height: 860px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* login-header登录头部模块 */
+.container .login-header {
+    height: 80px;
+    line-height: 80px;
+    padding: 0 20px;
+}
+
+.container .login-header .login-logo {
+    float: left;
+}
+
+.container .login-header .login-logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.container .login-header .login-logo h2 {
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 500;
+    color: #333;
+    vertical-align: bottom;
+}
+
+.container .login-header .login-nav {
+    float: right;
+}
+
+.container .login-header .login-nav a {
+    height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #838383;
+    line-height: 40px;
+    transition: all .2s linear;
+}
+
+.container .login-header .login-nav a:hover {
+    color: #ff5c00;
+}
+
+.container .login-header .login-nav ul {
+    float: left;
+}
+
+.container .login-header .login-nav ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+.container .login-header .login-nav .switchLang {
+    float: right;
+}
+
+.container .login-header .login-nav .switchLang a {
+    padding-left: 20px;
+    border-left: 1px solid #ccc;
+}
+
+.container .login-header .login-nav .switchLang a::after {
+    content: "\e920";
+    font-family: 'icomoon';
+    padding: 0 5px;
+    vertical-align: middle;
+}
+
+/* login-form登录表单模块 */
+.container .login-form,
+.container .register-form {
+    position: relative;
+    width: 450px;
+    padding: 40px 45px;
+    margin: 20px auto 0px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.container .login-hd {
+    height: 41px;
+    background-color: #fff;
+}
+
+.container .login-hd div {
+    float: left;
+    margin-right: 20px;
+}
+
+.container .login-hd div a {
+    font-size: 22px;
+    font-weight: 500;
+    color: #bbb;
+}
+
+.container .login-hd .login-hd-choice a {
+    font-weight: 600;
+    color: #333;
+}
+
+.container .login-hd .login-hd-choice span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    margin-top: 2px;
+    background-color: #ff6700;
+}
+
+/* login-content登录表单主体内容 */
+.label-big {
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+}
+
+.label-small {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.container .login-content {
+    width: 360px;
+    padding: 20px 2px 0px;
+    background-color: #fff;
+}
+
+/* tel pwd */
+.container .login-content .tel,
+.container .login-content .pwd {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.container .login-content .tel input,
+.container .login-content .pwd input,
+.container .login-content .login-btn input {
+    width: 354px;
+    height: 60px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.container .login-content .tel input,
+.container .login-content .pwd input {
+    padding: 30px 20px 10px;
+    background-color: #f9f9f9;
+}
+
+.container .login-content .tel label,
+.container .login-content .pwd label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 20px;
+    color: #959595;
+    font-weight: 400;
+}
+
+.container .login-content .tel label:hover,
+.container .login-content .pwd label:hover {
+    cursor: text;
+}
+
+/* prompt-info */
+.container .login-content .prompt-info {
+    display: none;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: red;
+}
+
+/* pwd eye */
+.container .login-content .pwd .eye {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    height: 60px;
+    padding-top: 20px;
+}
+
+.container .login-content .pwd .eye span {
+    transition: all .2s linear;
+}
+
+.container .login-content .pwd .eye span:hover {
+    cursor: pointer;
+}
+
+.container .login-content .pwd .eye span svg path {
+    transition: all .2s linear;
+}
+
+.container .login-content .pwd .eye span:hover svg path {
+    fill: #898989;
+}
+
+.container .login-content .pwd .eye span svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* protocol */
+.container .login-content .protocol {
+    color: #afafaf;
+    cursor: pointer;
+}
+
+.container .login-content .protocol input {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    vertical-align: bottom;
+}
+
+.container .login-content .protocol input:checked::after {
+    content: '\ea10';
+    font-family: 'icomoon';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    background-color: #ff5c00;
+}
+
+/* login-btn */
+.container .login-content .login-btn input {
+    margin: 20px 0px 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff5c00;
+    opacity: .4;
+    transition: all .2s linear;
+}
+
+.container .login-content .login-btn input:hover {
+    opacity: .3;
+}
+
+/* login-more */
+.container .login-content .login-more {
+    height: 30px;
+    line-height: 30px;
+}
+
+.container .login-content .login-more a {
+    font-size: 17px;
+    color: #ff6700;
+}
+
+.container .login-content .login-more .first {
+    float: left;
+}
+
+.container .login-content .login-more .last {
+    float: right;
+}
+
+/* login-other */
+.container .login-other {
+    width: 360px;
+    height: 96px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.container .login-other h3 {
+    height: 40px;
+    line-height: 40px;
+    Letter-spacing: 2px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.container .login-other .login-list a {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    margin: 0 12px;
+}
+
+.container .login-other .login-list a svg {
+    width: 46px;
+    height: 46px;
+}
+
+/* QRcode二维码模块 */
+.container .QRcode {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    border: 32px solid #ff5c00;
+    opacity: .4;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    transition: all .2s linear;
+}
+
+.container .QRcode .pop-up-box {
+    display: none;
+    position: absolute;
+    top: -21px;
+    right: 41px;
+}
+
+.container .QRcode .pop-up-box .box {
+    position: relative;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #ff6700;
+}
+
+.container .QRcode .pop-up-box .box .arrow {
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    border: 5px solid transparent;
+    border-left-color: #ff6700;
+}
+
+.container .QRcode:hover {
+    opacity: 1;
+}
+
+.container .QRcode span {
+    position: absolute;
+    top: -22px;
+    right: -22px;
+    display: block;
+    width: 36px;
+    height: 36px;
+}
+
+.container .QRcode span svg {
+    width: 36px;
+    height: 36px;
+}
+
+/* login-footer底部版权模块 */
+.login-footer {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+}
